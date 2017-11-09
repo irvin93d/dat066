@@ -1,0 +1,16 @@
+Måndag 2017-10-30
+Under denna dag delades vi in i projektgrupper. Vi tog tillfälle att diskutera tidigare erfarenheter relevant till ämnet, samt att fundera över vilka funderingar vi hade om projektet.
+
+Onsdag 2017-11-01
+Duane Irvin samlade ihop kontaktuppgifter hos gruppmedlemmar, kontaktade handledare för att boka möte samt gjorde lite annan förarbete, så som att skapa en gemensam Google Drive och github repo.
+
+Torsdag 2017-11-02
+Första mötet med handledaren Venkata Sudhir och hans kollega Gabriel som är ansvarig för de studentdrivna projekten på Cybercom. Vi fick lära känna Venkata och hans bakgrund, samt veta mer om projektet. 
+Det visade sig att projektet kommer att vara betydligt mer fokuserat på att använda färdiga bibliotek än vad vi trodde. Detta leder till att vi snabbare kan komma till ett resultat, och förhoppningsvis dessutom kan ha tid över att bredda projektet.
+Gabriel önskar att vi ska minst ett möte i veckan á 2h med Venkata.
+
+Fredag 2017-11-03
+Gruppen samlades för att skriva planeringsrapporten. Här uppstod många frågetecken relevanta till projektets mål och mening samt avgränsningar och implementering i projektet. Många av dessa bitar är dessutom viktig för det som kommer att bli projektets slutrapport. Det beslutades att vi därför tidigt ska påbörja rapporten, både för att förtydliga vår vision om slutprodukten och för att underlätta rapportskrivningen i slutet av projektet.
+
+
+Veckorapport skriven av Duane Irvin

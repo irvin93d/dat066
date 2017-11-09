@@ -1,0 +1,4 @@
+Tid: 1730-2000
+Arbete:
+Gjort research på tesseract och openCV
+Påbörjat en latex-fil för rapporten. 

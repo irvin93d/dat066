@@ -1,0 +1,3 @@
+Tid: 1000-1100
+Arbete:
+- Fortsatt arbete med rapporten. Strukturerat efter givna guidelines
