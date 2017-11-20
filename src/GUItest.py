@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import *
 import ctypes
+import os
 from PIL import Image
 from PIL import ImageTk
 import cv2
@@ -9,7 +10,7 @@ global picture_file_path
 picture_file_path = 'face.jpg'
 
 def __init__():
-    create_window(800, 600)
+    create_window(600, 600)
 
 
 def create_window(x_length_window, y_length_window):
@@ -35,11 +36,8 @@ def create_window(x_length_window, y_length_window):
     help_menu.add_command(label="Information", command=window.quit)
     window.config(menu=menubar)
 
-    #viewframe = Frame(window, bg='black', width=xSize, height=ySize - 60)
-    #image = ImageTk.PhotoImage(Image.open(path))
-    img = load_image(picture_file_path);
+    img = scale_image(picture_file_path)
     picture_label = Label(window, image = img)
-    #view_frame.pack(side=TOP)
     picture_label.pack(side="top")
 
     button_frame = Frame(window, width=x_length_window, height=int(float(y_window_position) * 0.2), bg='white')
@@ -48,7 +46,6 @@ def create_window(x_length_window, y_length_window):
     camera_button = Button(button_frame, text='Capture', fg="white", bg='red', width=15, height=3
                           , command=lambda: capture_image())
     camera_button.pack()
-
     tk.mainloop()
 
 
@@ -66,15 +63,14 @@ def capture_image():
 
 
 def scale_image(original_image):
-    pass
+    """Scales image, uses picture as input
+    returns a scaled picture"""
+
+    image = Image.open(original_image)
+    image.thumbnail((600,500), Image.ANTIALIAS)
+    scaled_img = ImageTk.PhotoImage(image)
+    return scaled_img
 
 
-def load_image(filename):
-    """Loads an image and returns it, it takes
-    file path as input"""
-
-    path = filename
-    img = ImageTk.PhotoImage(Image.open(path))
-    return img
 
 __init__()
