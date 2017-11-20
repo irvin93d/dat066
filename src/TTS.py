@@ -1,7 +1,7 @@
-"""pyttsx3 is the engine for TTF"""
+"""pyttsx3 is the engine for TTS"""
 import pyttsx3
 
-class TTF():
+class TTS():
     """Text-to-Speech
 
     Use pyttsx3 to play a voice from a text string
