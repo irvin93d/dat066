@@ -7,8 +7,8 @@ class TTS():
     Use pyttsx3 to play a voice from a text string
 
         :Example:
-        ttf = TTF()
-        ttf.say("Hey there!")
+        tts = TTS()
+        tts.say("Hey there!")
 
     """
     def __init__(self):
