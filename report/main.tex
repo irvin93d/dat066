@@ -11,12 +11,12 @@
 \title{Optical Character Recognition}
 \subtitle{Subtitle here \ldots}
 % TODO Add names here
-\date{DATE HERE, 2017}
 \author{Irvin,~Duane \\ \texttt{duane@student.chalmers.se}
   \and Karlsson,~Pontus \\ \texttt{ponkarls@student.chalmers.se}
   \and Holm,~Jesper \\ \texttt{~holmje@student.chalmers.se}
   \and Subramanian,~Aditya \\ \texttt{email@student.chalmers.se}
 }
+\date{DATE HERE, 2017}
 
 \begin{document}
 
@@ -66,31 +66,62 @@ features.
     \textbf{Feature} & \textbf{Description} \\
   \midrule
   RF-1 &
-    From an image, recognize characters with an accuracy of at least 75\%. Preferably better than 80\%. \\
+    From an image, recognize characters with an accuracy of at least 60\%.
+    Preferably better than 80\%.\\
   RF-2 &
     Turn text into English speech output. \\
   RF-3 &
     User interface that implements RF-1 and RF-2. \\
+  OF-1 &
+    Add functionality and improve performance to make the product compatible
+    with mobile devices. \textit{TBD} \\
+  OF-2 &
+    Use dictionary for correction of recognized words. \textit{TBD} \\
   \bottomrule
   \end{tabularx}
 \subsection{Scope}
 
 \section{Method}
-% TODO Fix title below
-\subsection{TODO\{title\} Framework for the way we work yao}
+\textit{TBD}
+
 \subsection{Testing}
+\textit{TBD}
 
 \section{Technical Background}
+\textit{TBD}
 
 \section{Implementation}
+Due to time and resource considerations, the scope of the project was decreased.
+Naturally, this had impact on the overall system architecture and requirements.
+The current scope of the project is outlined in detail below.
+
+Instead of a video feed, which was the original intention, the input to the
+system will be static images either saved on a hard drive or in memory. Going
+from a video feed to static images also removes the need for implementation of
+any motion and/or image tracking. The requirement for the detection/error rate
+was altered from 90\% to 60\% which is expected by Tesseract.
+
+The output is going to be a text file although an implementation of
+Text-To-Speech (TTS) is realistic and will be considered at a later stage of
+the project.
+
+To summarize, the system will take in a static image as an input, run
+character recognition and output the result. The output is text-based but
+Text-to-Speech (TTS) may be implemented in the final product.
 \subsection{Use cases}
+\textit{TBD}
+
 \subsection{UML/Modules}
+\textit{TBD}
+
 \subsection{Tests}
+\textit{TBD}
 
 \section{Result}
-\subsection{Did we achieve our goals}
+\textit{TBD}
 
 \section{Discussion}
+\textit{TBD}
 
 \pagebreak
 % Ask me how to properly insert references // Duane
