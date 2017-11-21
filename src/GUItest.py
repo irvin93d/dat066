@@ -5,6 +5,7 @@ import os
 from PIL import Image
 from PIL import ImageTk
 import cv2
+from tkinter.filedialog import askopenfilename
 
 global picture_file_path
 picture_file_path = 'face.jpg'
@@ -13,7 +14,7 @@ def __init__():
     create_window(600, 600)
 
 
-def create_window(x_length_window, y_length_window):
+def create_window(x_length_window, y_length_window, img=None):
     """Creates a Window with the size as input (x size, y size)
        createwindow(200,200) will a create a window 200x200px
     """
@@ -32,12 +33,14 @@ def create_window(x_length_window, y_length_window):
     help_menu = Menu(menubar, tearoff=0)
     menubar.add_cascade(label="Options", menu=options)
     options.add_command(label="Exit", command=window.quit)
+    options.add_command(label="Load image", command=lambda: load_image())
     menubar.add_cascade(label="Help", menu=help_menu)
     help_menu.add_command(label="Information", command=window.quit)
     window.config(menu=menubar)
 
     img = scale_image(picture_file_path)
-    picture_label = Label(window, image = img)
+    global picture_label
+    picture_label= Label(window, image = img)
     picture_label.pack(side="top")
 
     button_frame = Frame(window, width=x_length_window, height=int(float(y_window_position) * 0.2), bg='white')
@@ -71,6 +74,17 @@ def scale_image(original_image):
     scaled_img = ImageTk.PhotoImage(image)
     return scaled_img
 
+def load_path():
+    """Loads path from directory and returns its path"""
+    path = askopenfilename()
+    print(path)
+    return path
 
+
+def load_image():
+    """Loads a new image from directory to main-picture label"""
+    img = scale_image(load_path())
+    picture_label.configure(image=img)
+    picture_label.image = img
 
 __init__()
