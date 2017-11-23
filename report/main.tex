@@ -34,31 +34,32 @@
 
 \section{Introduction}
 \subsection{Background}
-This project being performed on behalf of Cybercom,
-a Nordic IT consulting company with multiple offices throughout the world.
-This project will be done in cooperation with the Cybercom Gothenburg office.
-The purpose of the project is to design a system capable of recognizing text 
-in an image and convert it into text or audio output. 
-The primary project description is kept as simple as possible. 
-However the intention is that if the primary functionality and tests are 
-finished the project scope and functionality can be extended depending on 
-time and resource constraints. 
-In the future the project could be expanded into a hardware implementation 
-to be used by vision impaired people with text to speech functionality.
+Literacy, the ability to read, is a core skill in the modern, information age
+that we live in. Unfortunately, many people around the world suffer from
+illiteracy due to reasons such as visual impairment, learning disabilities or
+a lack of opportunity. Providing a solution to this problem could prove
+fruitful in incorporating these people into our society. However, such a
+solution to the illiteracy problem could prove costly both from a fiscal and
+resource perspective. Optical Character Recognition technology could be the
+key to solving this problem at a low opportunity cost.
 \subsection{Purpose}
-The primary purpose of this project is to create a character recognition
-system using pre-existing libraries such as OpenCV. 
-A secondary purpose is for Cybercom to build a connection with students 
-who may become future engineers. 
+In cooperation with Cybercom, a software is to be developed which recognises
+characters from an image and outputs it as an audio recording.
 \subsection{Vision}
-The goal of this project is to develop a software that can recognise 
-characters on a image file. 
-The image is suppose to be taken with a laptop camera or something equivalent.
-And the software should be running on an Linux or Android platform. 
-For starters we are going to aim at single character recognition.
-Once the character is recognised it should be printed to a text file.
-If there is time, there will be further development on word recognition and
-to translate words to voice.
+The vision of the final product is to have a smartphone application which
+works on both Android and Apple’s iOS. The product should support both video
+feeds and static images as input and both text and audio outputs. In addition
+to character recognition, word recognition and the ability to self-correct in
+case of false recognition should be implemented. The recognition rate of all
+the above features should match the industry standard of 95\%.
+
+\subsection{Scope}
+Due to time constraints word recognition and word correction features will not
+ be implemented. The application will run on a laptop and not be ported to
+ smartphones. The input will be in the form of still images and not a video
+ feed. The industry standard 95\% recognition rate is also unachievable with
+ the current time constraints and is instead adjusted to a 60\% recognition
+ rate.
 
 Features below are denoted with RF for required features and OF for optional
 features.
@@ -67,8 +68,7 @@ features.
     \textbf{Feature} & \textbf{Description} \\
   \midrule
   RF-1 &
-    From an image, recognize characters with an accuracy of at least 60\%.
-    Preferably better than 80\%.\\
+    From an image, recognize characters with an accuracy of at least 60\%. \\
   RF-2 &
     Turn text into English speech output. \\
   RF-3 &
@@ -78,9 +78,10 @@ features.
     with mobile devices. \textit{TBD} \\
   OF-2 &
     Use dictionary for correction of recognized words. \textit{TBD} \\
+  OF-3 &
+    Improve RF-1 to 90\% recognition rate. \\
   \bottomrule
   \end{tabularx}
-\subsection{Scope}
 
 \section{Method}
 \textit{TBD}
@@ -92,25 +93,6 @@ features.
 \textit{TBD}
 
 \section{Implementation}
-Due to time and resource considerations, the scope of the project was decreased.
-Naturally, this had impact on the overall system architecture and requirements.
-The current scope of the project is outlined in detail below.
-
-Instead of a video feed, which was the original intention, the input to the
-system will be static images either saved on a hard drive or in memory. Going
-from a video feed to static images also removes the need for implementation of
-any motion and/or image tracking. The requirement for the detection/error rate
-was altered from 90\% to 60\% which is expected by Tesseract.
-
-The output is going to be a text file although an implementation of
-Text-To-Speech (TTS) is realistic and will be considered at a later stage of
-the project.
-
-To summarize, the system will take in a static image as an input, run
-character recognition and output the result. The output is text-based but
-Text-to-Speech (TTS) may be implemented in the final product.
-\subsection{Use cases}
-\textit{TBD}
 
 \subsection{UML/Modules}
 \textit{TBD}
@@ -120,6 +102,15 @@ Text-to-Speech (TTS) may be implemented in the final product.
   \caption{\textit{TBD}}\label{fig:ex1a}
   \includegraphics[width=1.0\textwidth]{res/UML1}
 \end{figure}
+
+\subsection{Optical Character Recognition}
+\textit{TBD}
+
+\subsection{GUI}
+\textit{TBD}
+
+\subsection{Text-To-Speech}
+\textit{TBD}
 
 \subsection{Tests}
 \textit{TBD}
