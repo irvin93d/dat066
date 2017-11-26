@@ -1,4 +1,6 @@
-"""pyttsx3 is the engine for TTS"""
+""" pyttsx3 is the engine for TTS.
+    Currently just a wrapper for pyttsx3.
+"""
 import pyttsx3
 
 class TTS():
