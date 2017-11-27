@@ -1,9 +1,0 @@
-Tid: 1000-1100
-Arbete:
-- Fortsatt arbete med rapporten. Strukturerat efter givna guidelines
-
-Tid: 1300-1530
-Arbete:
-- Gruppmöte där diskussion kring tesseract tagits upp
-- Möte med Venkata, diskuterat kommande tasks (use case, utvecklingsmiljö)
-

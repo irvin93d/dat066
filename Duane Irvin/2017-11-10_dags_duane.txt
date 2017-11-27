@@ -1,3 +1,0 @@
-Tid: 1400-1600
-Arbete:
-- Lista failande use cases. Fortfarande inte strukturerat ett flow för dessa. Finns på google Drive
