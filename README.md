@@ -13,8 +13,7 @@ Required python packages: pytesseract, gTTS and tkinter.
 ### Install OpenCV on Linux
 Note that there may be issues running opencv with Anaconda3 (if you don't
 know what Anaconda is, you are probably not using it).
-Follow here
-[](https://www.learnopencv.com/install-opencv3-on-ubuntu/)
+Follow instructions here: https://www.learnopencv.com/install-opencv3-on-ubuntu/
 
 ### Install Tesseract on Linux
 ```
