@@ -11,7 +11,7 @@ Required libraries: OpenCV and Tesseract
 Required python packages: pytesseract, gTTS and tkinter.
 
 ### Install OpenCV on Linux
-Follow instructions here: https://www.learnopencv.com/install-opencv3-on-ubuntu/
+Follow instructions here: https://www.learnopencv.com/install-opencv3-on-ubuntu/  
 Note that there may be issues running opencv with Anaconda3 (if you don't
 know what Anaconda is, you are probably not using it).
 
