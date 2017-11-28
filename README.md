@@ -1,21 +1,42 @@
 # dat066
+Use camera to recognize a text and play it as audio.
 
-## Dashboard
+## Description
+Takes an photo with devices camera and processing it using OpenCV. The image is
+then passed through Tesseract and turned into string format. The string
+is played using Google's Text-To-Speech API (gTTS).
 
-### Events
-- [ ] 7/11 10:15-12:00 Föredrag i Alfa 
-- [ ] 21/11 15:15-17:00 Workshop i Delta och Gamma
-- [ ] 5/12 08:15-12:00 Språklig handledning i Delta
+## Prerequisites
+Required libraries: OpenCV and Tesseract
+Required python packages: pytesseract, gTTS and tkinter.
 
-### Course Deadlines
-- [ ] 23/11 Halvtidsrapport på PingPong (skapa mappen Halvtidsredovisning). Rapporten skall också skickas till tilldelad opponentgrupp.
-- [ ] 24/11 Egen utvärdering (DAT066 Självbedömning grupp.docx i pingpong). Skickas till sistek@chalmers.se senast söndag, den 24 november, med skriftlig motivering. Projektmedlemmarna betygsätter varandra (inom projektet) med skriftlig motivering på ca. halv A4, skickas som pdf fil.
-- [ ] 27/11 10:15-12:00 Muntlig halvtidsredovisnig i Jupiter 243. 10-13 minuter. Opponering sker i anslutning till respektive halvtidspresentation (max 5 minuter).
-- [ ] 14/12 Egen utvärdering (DAT066 Självbedömning grupp.pdf). Skickas till sistek@chalmers.se.
-- [ ] 10/12 Skriftlig slutredovisning. Pingpong och skickas till tilldelad opponentgrupp.
-- [ ] 15/12 13:15 Muntlig slutpresentation i Jupiter 243. 10-13 minuter. Opponering sker i anslutning till respektive slutpresentation (max 5 minuter).
+### Install OpenCV on Linux
+Note that there may be issues running opencv with Anaconda3 (if you don't
+know what Anaconda is, you are probably not using it).
+Follow here
+[](https://www.learnopencv.com/install-opencv3-on-ubuntu/)
 
-## Contact Info
+### Install Tesseract on Linux
+```
+  sudo apt-get install tesseract-ocr
+```
+
+### Install libraries using pip
+Expects you to have opencv installed according to instructions above.
+Before installing packages, one must be using opencv virtual environment,
+as used in instructions for installing OpenCV.
+```
+  workon facecourse-py3
+```
+
+To install package, run
+```
+  pip install <package>
+```
+
+## Usage
+
+## Contributors
 Duane Irvin  
 076-026 00 26  
 irvin93d@gmail.com  
@@ -34,3 +55,5 @@ holmje@student.chalmers.se
 Aditya Subramanian  
 073-074 06 12  
 subramanianaditya42@gmail.com  
+
+<!-- TODO ## License-->
