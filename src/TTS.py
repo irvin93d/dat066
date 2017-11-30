@@ -1,24 +1,16 @@
-""" pyttsx3 is the engine for TTS.
-    Currently just a wrapper for pyttsx3.
-"""
-import pyttsx3
+import tempfile
+from pygame import mixer
+from gtts import gTTS
 
 class TTS():
-    """Text-to-Speech
-
-    Use pyttsx3 to play a voice from a text string
-
-        :Example:
-        tts = TTS()
-        tts.say("Hey there!")
-
-    """
     def __init__(self):
-        self.engine = pyttsx3.init()
-        """ TODO set volume and language """
+        mixer.init()
 
     def say(self, text):
-        """play string text from speakers"""
-        # TODO Test that text is a string
-        self.engine.say(text)
-        self.engine.runAndWait()
+        if mixer.music.get_busy():
+            mixer.music.stop()
+        tts = gTTS(text=text, lang='en-us', slow=True)
+        tmp = tempfile.mktemp(suffix='mp3')
+        tts.save(tmp)
+        mixer.music.load(tmp)
+        mixer.music.play()
