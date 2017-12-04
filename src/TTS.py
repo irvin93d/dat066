@@ -9,7 +9,7 @@ class TTS():
     def say(self, text):
         if mixer.music.get_busy():
             mixer.music.stop()
-        tts = gTTS(text=text, lang='en-us', slow=True)
+        tts = gTTS(text=text, lang='en-us')
         tmp = tempfile.mktemp(suffix='mp3')
         tts.save(tmp)
         mixer.music.load(tmp)
