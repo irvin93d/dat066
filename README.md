@@ -7,8 +7,9 @@ then passed through Tesseract and turned into string format. The string
 is played using Google's Text-To-Speech API (gTTS).
 
 ## Prerequisites
-Required libraries: OpenCV and Tesseract
-Required python packages: pytesseract, gTTS and tkinter.
+Required libraries: OpenCV and Tesseract  
+
+Required python packages: pytesseract, gTTS, pygame and tkinter.
 
 ### Install OpenCV on Linux
 Follow instructions here: https://www.learnopencv.com/install-opencv3-on-ubuntu/  
