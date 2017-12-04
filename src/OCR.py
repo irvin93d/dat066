@@ -16,7 +16,5 @@ def image_to_string(image):
     # Remove multiple space
     text = re.sub('[ \t]+', ' ', text)
 
-
-    
-
     return text
+
