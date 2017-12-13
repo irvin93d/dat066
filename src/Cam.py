@@ -11,9 +11,6 @@ class Cam():
     def __del__(self):
         if not self.cap.isOpened():
             self.cap.release()
-    def start(self):
-        # TODO Implement
-        pass
     def capture(self):
         """ Capture current frame and return as Image
         """
@@ -23,9 +20,5 @@ class Cam():
         # Fix color channels
         frame = cv2.merge(cv2.split(frame)[::-1])
 
-        frame = Image.fromarray(frame)
-
-        return frame
-    def stop(self):
-        # TODO Implement
-        pass
+        # Return as Image
+        return Image.fromarray(frame)
