@@ -3,27 +3,24 @@
 \begin{document}
 
 \begin{abstract}
-The issue with detecting characters on an image is still a problem today. By
-being able to detect handwritten characters, a great amount of documentation
-work done by humans  could be replaced by computers. By having this technology
-present it could be applied in many fields, for example digitalization of old
-documents written by hand. It can also be combined with text-to-speech to help
-visually impaired persons to read a larger amount of texts without need of
-tactile translation. 
+  The goal of this project is to to develop a system that is able to analyse 
+  an image and extract any available text. It should also be able to save the
+  text in a file and convert the text to speech, with an accuracy of at least
+  60\%. The platform that is going to be used is Linux.
 
-The goal of this project is to to develop a system that is  able to analyse an
-image and extract any available text. It should also be able to save the text
-in a file and convert the text to speech, with an accuracy of at least 75\%.
-The user is going to be able to capture a picture with a graphical interface
-which shows live camera feed. Once the picture is captured it is analysed and
-printed, it should also be converted to speech.
+  The approach to reach the goal is agile programming with inspiration from
+  Scrum. Cycles with the length of one week will be used and meetings will be
+  arranged twice a week.
+  
+  The user is going to be able to capture an image with a graphical interface
+  which shows live camera feed. Once the picture is captured it is analysed
+  and if any text is found it is printed, it should also be converted to
+  speech.
 
-Existing libraries in Python will be used for image processing and character
-recognition. The result was a functioning system with a \textit{TBD}\%
-accuracy. It supports all the functions that were meant to be implemented.
-Although due to communication errors between teacher and project leader our
-scope were reduced and the accuracy of the character recognition was lowered
-to 60\%.
+  Existing libraries in Python are used. OpenCV are used for image processing,
+  Tesseract for character recognition and gTTS for text to speech conversion.
+  The result is a functioning system with an character recognition accuracy of
+  90-100\% for clear text.
 \end{abstract}
 
 \end{document}

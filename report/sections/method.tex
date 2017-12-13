@@ -1,15 +1,23 @@
 \documentclass[../main.tex]{subfiles}
     
 \begin{document}
-The first thing we did was to arrange meetings at specific dates. The first
-two weeks consisted of planning. Our idea was to share ideas and make a solid
-plan so we could split work between members. We made a schedule and decided
-what needs to be done each week. 
 
-To understand how the system could be built we drew several UML- and system
-flow diagrams, this gave us good ideas how we could modularize the system. Due
-to the architecture and platform constraint we choose to code in Python. The
-choice to use Python comes with advantages. Python have several 
-text-to-speech, character recognition and image processing libraries that are
-well developed.
+The project started with a planning phase. Specifications were set up and a schedule for each module was implemented. It was decided that weekly meetings and planning for new iterations with the length of a week were to be applied. 
+
+To understand how the system could be built several UML- and system flow diagrams were produced, this gave good ideas on how to modularize the system.
+
+Due to the architecture and platform constraint the coding language Python was used. The choice to use Python comes with advantages. Python have several open source text-to-speech, character recognition and image processing libraries that are well developed. The libraries that will be used in the modules are gTTS for text to speech. Tesseract will be used for character recognition and OpenCV vill be used for image processing. 
+
+The system should consist of a simple GUI that shows live camera feed and allows the user to capture an image. The image is automatically analysed. First the image will be pre-processed with OpenCV and then the image is analysed with Tesseract. Once the image has been pre-processed and analysed the text will be read by gTTS, and the extracted text will be returned.
+
+The accuracy of the OCR was measured by comparing the text predicted by the OCR with the text known to be in the image. A difftool from the Python libraries was used count the number of correct characters. The accuracy was denoted as the number of correct characters divided by the number characters from the longest text, out the predicted text and the actual text,
+$$
+    \text{accuracy} = 
+    \frac
+        {\text{number of correct chars}}
+        {\max(\text{numbers of predicted chars},
+              \text{number of actual chars})
+        }.
+$$
+
 \end{document}

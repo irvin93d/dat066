@@ -1,7 +1,19 @@
 \documentclass[../main.tex]{subfiles}
     
 \begin{document}
+
+The issue with detecting characters on an image is still a problem today. By
+being able to detect handwritten characters, a great amount of documentation
+work done by humans  could be replaced by computers. By having this technology
+present it could be applied in many fields, for example digitalization of old
+documents written by hand. It can also be combined with text-to-speech to help
+visually impaired or illiterate persons to read a larger amount of texts
+without any need of tactile translation. The technology can also be applied in
+educational fields to aid learning. The project has been done in collaboration
+with Cybercom, a Nordic IT-consultant company.
+
 \subsection{Background}
+
 Literacy, the ability to read, is a core skill in the modern, information age
 that we live in. Unfortunately, many people around the world suffer from
 illiteracy due to reasons such as visual impairment, learning disabilities or
@@ -10,10 +22,14 @@ fruitful in incorporating these people into our society. However, such a
 solution to the illiteracy problem could prove costly both from a fiscal and
 resource perspective. Optical Character Recognition technology could be the
 key to solving this problem at a low opportunity cost.
+
 \subsection{Purpose}
-In cooperation with Cybercom, a software is to be developed which recognises
+
+In cooperation with Cybercom, a software was developed which recognises
 characters from an image and outputs it as an audio recording.
+
 \subsection{Vision}
+
 The vision of the final product is to have a smartphone application which
 works on both Android and Apple’s iOS. The product should support both video
 feeds and static images as input and both text and audio outputs. In addition
@@ -23,15 +39,15 @@ the above features should match the industry standard of 95\%.
 
 \subsection{Scope}
 Due to time constraints word recognition and word correction features will not
- be implemented. The application will run on a laptop and not be ported to
- smartphones. The input will be in the form of still images and not a video
- feed. The industry standard 95\% recognition rate is also unachievable with
- the current time constraints and is instead adjusted to a 60\% recognition
- rate.
+be implemented. The application will run on a laptop and not be ported to
+smartphones. The input will be in the form of still images and not a video
+feed. The industry standard 95\% recognition rate is also unachievable with
+the current time constraints and is instead adjusted to a 60\% recognition
+rate.
 
 Features below are denoted with RF for required features and OF for optional
 features.
-  \noindent\begin{tabularx}{\linewidth}{X p{0.75\linewidth}}
+  \noindent\begin{tabularx}{\linewidth}{X p{0.78\linewidth}}
   \toprule
     \textbf{Feature} & \textbf{Description} \\
   \midrule
@@ -50,5 +66,7 @@ features.
     Improve RF-1 to 90\% recognition rate. \\
   \bottomrule
   \end{tabularx}
+  \captionof{table}{Specifications. RF represents required features. OF
+  represents optional features.\label{table:specs}}
 
 \end{document}

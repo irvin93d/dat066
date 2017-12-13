@@ -3,14 +3,21 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{caption, subcaption}
 \usepackage{booktabs}
 \usepackage{microtype}
+\usepackage{amssymb, amsmath, amsthm}
+
+\graphicspath{{./res/}}
 % TODO Fix title below
-\usepackage[pdftitle = {From Image to Speech Using OpenCV and Tesseract OCR}, colorlinks = true, urlcolor = blue, linkcolor = blue, citecolor = blue]{hyperref}
+\usepackage[pdftitle = {From Image to Speech Using OpenCV and Tesseract OCR},
+                        colorlinks = true, urlcolor = blue, linkcolor = blue,
+                        citecolor = blue]{hyperref}
 
 \usepackage{subfiles}
 
 \begin{document}
+\pagenumbering{Alph}
 
 % TODO Fix title here
 \title{From Image to Speech using \\ OpenCV and Tesseract OCR}
@@ -38,16 +45,17 @@
 \thispagestyle{empty}
 \pagebreak
 
+\pagenumbering{arabic}
 \setcounter{page}{1}
 
 \section{Introduction}
 \subfile{sections/introduction}
 
-\section{Method}
-\subfile{sections/method}
-
 \section{Technical Background}
 \subfile{sections/technical_background}
+
+\section{Method}
+\subfile{sections/method}
 
 \section{Implementation}
 \subfile{sections/implementation}

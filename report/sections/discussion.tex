@@ -1,4 +1,9 @@
 \documentclass[../main.tex]{subfiles}
     
 \begin{document}
+
+As described earlier, the original vision for the project was potentially to create a system based on the concept of neural networks. However, after researching the potential implementation of such a solution, creating our own neural network based on our own learning data was deemed a task too big given the time constraints for the project. This is perhaps a topic for future research. 
+
+While Tesseract has proved to be quite strong in context of OCR, it causes issues when the input picture is not perfect. Factors such as colorful text, lighting or there lack of, reflections from a LED screen or skewed texts have caused issues during the testing of Tesseract. OpenCV has a wide array of functions to deal with this during image processing but the larger issue is to code software which can recognize the relevant issue and apply the correct image preprocessing. A general image preprocessing solution to address all potential issues may cause other problems and reduce the recognition rate of Tesseract. A potential solution to this issue is again the application of neural networks. The best-case scenario for such a solution would mean that the network understands what image preprocessing needs to be applied to each individual image by recognizing the problem, similar to how the human eye functions.
+
 \end{document}
