@@ -21,7 +21,6 @@ def image_to_string(image):
 
     # Turn processed image back to image format
     processed = Image.fromarray(numpy.array(processed))
-    processed.save('Lol.png')
     text = pytesseract.image_to_string(processed)
 
     # Remove single newlines (always removes one newline in a group)
