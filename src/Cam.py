@@ -9,18 +9,16 @@ class Cam():
     def __init__(self):
         self.cap = cv2.VideoCapture(0)
     def __del__(self):
-        # TODO if not released
-        self.cap.release()
-    def start(self):
-        # TODO Implement
-        pass
+        if not self.cap.isOpened():
+            self.cap.release()
     def capture(self):
         """ Capture current frame and return as Image
         """
         # TODO Test if successful
         ret, frame = self.cap.read()
-        frame = Image.fromarray(frame)
-        return frame
-    def stop(self):
-        # TODO Implement
-        pass
+
+        # Fix color channels
+        frame = cv2.merge(cv2.split(frame)[::-1])
+
+        # Return as Image
+        return Image.fromarray(frame)
